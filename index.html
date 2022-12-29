@@ -5,142 +5,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slide.css">
     <title>Header</title>
 </head>
 
 <body>
     <div class="overlay "></div>
-        <header class="header">
-            <div class="header__banner">
-                <div class="header__banner-title">
-                    СЕЗОННАЯ АПТЕКА
-                </div>
+    <header class="header">
+        <div class="header__banner">
+            <div class="header__banner-title">
+                СЕЗОННАЯ АПТЕКА
             </div>
+        </div>
 
-            <div class="header__top">
-                <div class="container">
-                    <div class="header__top-inner">
-                        <div class="header__top-links">
-                            <a class="header__top-link" href="#">Гродно</a>
-                        </div>
-                        <div class="header__top-contacts contacts">
-                            <a class="contacts__link" href="tel:537-50-50">537-50-50</a>
-                            <span class="contacts__text">колл-центр</span>
-                            <span class="contacts__subscribers">(MTC,A1,life)</span>
-                        </div>
-                        <div class="header__top-menu">
-                            <div class="header__top-menu-open">
-                                <span class="open__span">Меню</span>
-                            </div>
-                            <ion-icon class="close" name="close"></ion-icon>
-                            <ul class="header__top-list">
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Наши аптеки</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Новости</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Бренды</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Статьи</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Программы лояльности</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Подарочные сертификаты</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a class="header__top-item-link" href="#">Оплата и доставка</a>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__top-links">
+                        <a class="header__top-link" href="#">Гродно</a>
                     </div>
-                </div>
-            </div>
-
-            <div class="header__content">
-                <div class="container">
-                    <div class="header__content-inner">
-                        <ion-icon class="content__btn-open" name="menu-outline"></ion-icon>
-                        <a class="header__content-logo" href="#">
-                            <img class="header__content-logo-img" src="images/logo.svg" alt="">
-                        </a>
-                        <button class="header__content-btn">
-                            <ion-icon class="content__btn-icon" name="menu-outline"></ion-icon>
-                            <span class="content__btn-text">Каталог</span>
-                        </button>
-
-                        <form class="header__content-form">
-                            <div class="header__content-input">
-                                <input class="content__input" type="text" placeholder="Начните поиск...">
-                                <a class="header__content-link" href="#">Найти</a>
-                            </div>
-                        </form>
-                        <ion-icon class="header__content-search" name="search"></ion-icon>
-
-                        <div class="header__content-boxs box">
-                            <div class="box__item box__favorites">
-                                <ion-icon class="icon box__favorits-icon" name="heart-outline"></ion-icon>
-                                <div class="box__favorits-text text">Избранное</div>
-                                <span class="box__span favorits__span">5</span>
-                            </div>
-
-                            <div class="box__item box__basket">
-                                <ion-icon class="icon box__basket-icon" name="cart-outline"></ion-icon>
-                                <div class="box__favorits-text text">Корзина</div>
-                                <span class="box__span">8</span>
-                            </div>
-                        </div>
+                    <div class="header__top-contacts contacts">
+                        <a class="contacts__link" href="tel:537-50-50">537-50-50</a>
+                        <span class="contacts__text">колл-центр</span>
+                        <span class="contacts__subscribers">(MTC,A1,life)</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header__bottom-inner">
-                        <ul class="header__bottom-list">
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Акции</a>
+                    <div class="header__top-menu">
+                        <div class="header__top-menu-open">
+                            <span class="open__span">Меню</span>
+                        </div>
+                        <ion-icon class="close" name="close"></ion-icon>
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Наши аптеки</a>
                             </li>
-                            <li class="header__bottom-item header__item">
-                                <span class="header__bottom-item-icon">%</span>
-                                <a class="header__bottom-link" href="#">Скидки</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Новости</a>
                             </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Сезонная аптечка "Будь здоров!"</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Бренды</a>
                             </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Лекарственные и профилактические средства</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Статьи</a>
                             </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Витамины и БАДы</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Программы лояльности</a>
                             </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Красота и уход</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Подарочные сертификаты</a>
                             </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Оптика</a>
-                            </li>
-                            <li class="header__bottom-item">
-                                <a class="header__bottom-link" href="#">Еще</a>
+                            <li class="header__top-item">
+                                <a class="header__top-item-link" href="#">Оплата и доставка</a>
                             </li>
                         </ul>
-
-                            <button class=" btn__bottom">
-                                <ion-icon class="btn__bottom-icon" name="menu-outline"></ion-icon>
-                                <span class="btn__bottom-text">Каталог</span>
-                            </button>
-                            
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-inner">
+                    <ion-icon class="content__btn-open" name="menu-outline"></ion-icon>
+                    <a class="header__content-logo" href="#">
+                        <img class="header__content-logo-img" src="images/logo.svg" alt="">
+                    </a>
+                    <button class="header__content-btn">
+                        <ion-icon class="content__btn-icon" name="menu-outline"></ion-icon>
+                        <span class="content__btn-text">Каталог</span>
+                    </button>
 
+                    <form class="header__content-form">
+                        <div class="header__content-input">
+                            <input class="content__input" type="text" placeholder="Начните поиск...">
+                            <a class="header__content-link" href="#">Найти</a>
+                        </div>
+                    </form>
+                    <ion-icon class="header__content-search" name="search"></ion-icon>
+
+                    <div class="header__content-boxs box">
+                        <div class="box__item box__favorites">
+                            <ion-icon class="icon box__favorits-icon" name="heart-outline"></ion-icon>
+                            <div class="box__favorits-text text">Избранное</div>
+                            <span class="box__span favorits__span">5</span>
+                        </div>
+
+                        <div class="box__item box__basket">
+                            <ion-icon class="icon box__basket-icon" name="cart-outline"></ion-icon>
+                            <div class="box__favorits-text text">Корзина</div>
+                            <span class="box__span">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <ul class="header__bottom-list">
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Акции</a>
+                        </li>
+                        <li class="header__bottom-item header__item">
+                            <span class="header__bottom-item-icon">%</span>
+                            <a class="header__bottom-link" href="#">Скидки</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Сезонная аптечка "Будь здоров!"</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Лекарственные и профилактические средства</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Витамины и БАДы</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Красота и уход</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Оптика</a>
+                        </li>
+                        <li class="header__bottom-item">
+                            <a class="header__bottom-link" href="#">Еще</a>
+                        </li>
+                    </ul>
+                    <button class=" btn__bottom">
+                        <ion-icon class="btn__bottom-icon" name="menu-outline"></ion-icon>
+                        <span class="btn__bottom-text">Каталог</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="container">            
+            <div class="slider__flex">
+                <div class="slider__col">
+
+                    <div class="slider__prev">
+                        <ion-icon name="chevron-up-outline"></ion-icon>
+                    </div> <!-- Кнопка для переключения на предыдущий слайд -->
+
+                    <div class="slider__thumbs">
+                        <div class="swiper-container">
+                            <!-- Слайдер с превью -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__image  ">
+                                        <img src="images/slider-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="images/slider-2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__next">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div> <!-- Кнопка для переключения на следующий слайд -->
+                </div>
+
+                <div class="slider__images">
+                    <div class="swiper-container">
+                        <!-- Слайдер с изображениями -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image js__images">
+                                    <img src="images/slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox js__lightbox">
+        <div class="open-full">
+            <ion-icon class="open-full__expand js-open-full__expand" name="expand-outline"></ion-icon>
+            <div class="lightbox__close js__lightbox-close">&times;</div>
+        </div>
+        <div class="lightbox__content js__lightbox-content">           
+            <img class="lightbox__img js__lightbox-img" src="images/slider-1.jpg" alt="">
+            <div class="lightbox__counter js__lightbox-counter"></div>
+        </div>
+        <div class="lightbox__controls">
+            <div class="prev__item">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="next__item">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/main.js"></script>

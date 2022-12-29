@@ -11,7 +11,6 @@
 body {
 	font-family: "Roboto Slab", serif;
 	font-size: 14px;
-	max-height: 100vh;
 	font-weight: 400;
 	color: black;
 }
@@ -50,6 +49,7 @@ img {
 	background: #fff;
 	box-shadow: 0 3px 4px rgb(1 26 51 / 8%);
 	width: 100%;
+    margin-bottom: 0px;
 }
 .header__banner {
 	background: #0741a97a;
@@ -257,8 +257,7 @@ img {
 	right: 16px;
 }
 /* ----------------------header__button--------------- */
-.header__bottom {
-}
+
 .header__bottom-inner {
 	padding: 20px 5px;
 }
@@ -344,6 +343,7 @@ img {
 		position: absolute;
 		left: 0;
 		top: 210px;
+        max-width: 250px;
 		background: #fff;
 		height: 100%;
 		box-shadow: 0 3px 4px rgb(1 26 51 / 15%);

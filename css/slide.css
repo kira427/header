@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Slab", serif;
+	font-size: 14px;
+	max-height: 100vh;
+	font-weight: 400;
+	color: black;
+}
+
+.container {
+	padding: 0 10px;
+	max-width: 1420px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+.slide__overlay {
+	display: none;
+	position: fixed;
+	z-index: 15;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(1 26 51 / 25%);
+	width: 100%;
+	height: 100%;
+}
+
+.slider {
+	padding: 32px;
+	color: #fff;
+	position: absolute;
+	left: 190px;
+}
+.slider .swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.slider__flex {
+	display: flex;
+	align-items: center;
+}
+.slider__col {
+	display: flex;
+	flex-direction: column;
+	width: 185px;
+	margin-right: 32px;
+	align-items: center;
+}
+.slider__prev ion-icon,
+.slider__next ion-icon {
+	cursor: pointer;
+	text-align: center;
+	font-size: 40px;
+	color: blue;
+	height: 48px;
+	display: flex;
+}
+.slider__prev:focus,
+.slider__next:focus {
+	outline: none;
+}
+.slider__thumbs {
+	overflow: hidden;
+	height: calc(500px - 96px);
+}
+.slider__thumbs .slider__image {
+	transition: 0.25s;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid grey;
+}
+.slider__thumbs .slider__image:hover {
+	border: 2px solid blue;
+}
+
+.slider__images {
+	overflow: hidden;
+	height: 350px;
+}
+
+.slider__image {
+	width: 100%;
+	height: 100%;
+}
+.slider__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 854.98px) {
+	.slider__flex {
+		flex-direction: column-reverse;
+	}
+
+	.slider__col {
+		flex-direction: row;
+		align-items: center;
+		margin-right: 0;
+		margin-top: 24px;
+		width: 100%;
+	}
+	.slider__images {
+		width: 100%;
+	}
+	.slider__thumbs {
+		height: 100px;
+		width: calc(100% - 96px);
+		margin: 0 16px;
+	}
+	.slider__prev,
+	.slider__next {
+		height: auto;
+		width: 32px;
+	}
+}
+
+.slider__flex.horizontal {
+    display: flex;
+}
+
+/* ========LIGHTBOX=================================== */
+.lightbox {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: rgb(0, 0, 0, 0.7);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 18px;
+}
+
+.open-full {
+	position: fixed;
+	right: 68px;
+	top: 21px;
+	font-weight: 900;
+	font-size: 29px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.lightbox__img {
+	height: auto;
+	width: auto;
+	height: 450px;
+	max-width: 100%;
+	cursor: pointer;
+	background: #fff;
+	display: block;
+	padding: 10px;
+}
+
+.lightbox__content {
+	position: relative;
+}
+.lightbox__close {
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	right: 15px;
+	top: 2px;
+	font-size: 50px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lightbox__counter {
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	top: -35px;
+	font-size: 25px;
+	font-weight: 900;
+	color: #fff;
+	display: inline-block;
+	z-index: -1;
+}
+
+.lightbox__controls .prev__item,
+.lightbox__controls .next__item {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	color: #000;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	top: 50%;
+	margin-top: -20px;
+	z-index: 110;
+	transition: all 0.5s ease;
+}
+
+.lightbox__controls .prev__item:hover,
+.lightbox__controls .next__item:hover {
+	transform: scale(1.2);
+}
+
+.lightbox__controls .prev__item:active,
+.lightbox__controls .next__item:active {
+	transform: scale(1);
+}
+
+.lightbox__controls .prev__item {
+	left: 18px;
+}
+.lightbox__controls .next__item {
+	right: 18px;
+}
+
+.lightbox__controls .prev__item ion-icon,
+.lightbox__controls .next__item ion-icon {
+	font-size: 35px;
+}
+
+.lightbox__controls .prev__item ion-icon {
+	margin-right: 4px;
+}
+/* LIGHT OPEN */
+.lightbox.open {
+	display: flex;
+}
+
+.lightbox.open .lightbox__content {
+	animation: lightboxImage 0.5s ease;
+}
+
+@keyframes lightboxImage {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
