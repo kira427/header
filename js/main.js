@@ -53,7 +53,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
             spaceBetween: 10,
             direction: 'horizontal',
         },
-        340: {
+        400: {
             slidesPerView: 3,
             spaceBetween: 10,
             direction: 'horizontal',

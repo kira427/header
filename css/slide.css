@@ -157,13 +157,21 @@ ul {
 @media (max-width: 499.98px) {
 	.slider__thumbs {
 		max-height: 83px;
-		max-width: calc(500px - 96px);
+		max-width: calc(420px - 96px);
 		width: 100%;
 	}
 	.slider__images {
 		max-height: 390px;
 		height: 100%;
 		max-width: 300px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 399.99px) {
+	.slider__thumbs {
+		max-height: 83px;
+		max-width: calc(300px - 96px);
 		width: 100%;
 	}
 }
@@ -231,7 +239,7 @@ ul {
 
 .lightbox__counter {
 	position: absolute;
-	left: 50%;
+	left: 46%;
 	width: 100%;
 	top: -35px;
 	font-size: 25px;
@@ -305,13 +313,13 @@ ul {
 }
 
 /* ======================================= */
-@media (max-width: 555px) {
+@media (max-width: 585px) {
 	.lightbox__img {
 		height: 350px;
 	}
 }
 
-@media (max-width: 470px) {
+@media (max-width: 485px) {
 	.lightbox__controls .prev__item,
 	.lightbox__controls .next__item {
 		height: 30px;
