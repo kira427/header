@@ -13,6 +13,7 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	color: black;
+    overflow-x: hidden;
 }
 
 .container {
@@ -338,6 +339,15 @@ img {
 	color: #1163f3;
 }
 
+.location {
+	margin-bottom: 100px;
+    overflow: hidden;
+}
+.map {
+	width: 100%;
+    margin-bottom: 150px;
+}
+
 /* --------------------------------------- */
 
 @media (max-width: 1320px) {
@@ -368,7 +378,7 @@ img {
 		top: 210px;
 		max-width: 250px;
 		background: #fff;
-		height: 100%;
+		height: 60%;
 		box-shadow: 0 3px 4px rgb(1 26 51 / 15%);
 	}
 
@@ -382,6 +392,35 @@ img {
 	}
 	.header__bottom-item-icon {
 		left: 58px;
+	}
+}
+@media (max-width: 1040px) {
+	.header__bottom {
+		top: 126px;
+		transform: translateX(-98%);
+	}
+	.header__bottom.active {
+		transform: translateX(0%);
+		z-index: 1000;
+	}
+	.header__span {
+		display: inline-block;
+		left: 250px;
+		top: 220px;
+		background: #0741a97a;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		box-shadow: 0 0 12px 2px #3d3636;
+		cursor: pointer;
+	}
+	.btn__bottom {
+		display: flex;
 	}
 }
 
@@ -490,33 +529,6 @@ img {
 		top: 15px;
 		right: 0;
 	}
-	.header__bottom {
-		top: 126px;
-		transform: translateX(-98%);
-	}
-	.header__bottom.active {
-		transform: translateX(0%);
-	}
-	.header__span {
-		display: inline-block;
-		left: 250px;
-		top: 220px;
-		background: #0741a97a;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-		box-shadow: 0 0 12px 2px #3d3636;
-		cursor: pointer;
-		z-index: 1000;
-	}
-	.btn__bottom {
-		display: flex;
-	}
 }
 
 @media (max-width: 455px) {
@@ -542,7 +554,7 @@ img {
 	}
 	.header__content-form.active {
 		top: 76px;
-        left: -3px;
+		left: -3px;
 	}
 	.header__content-search {
 		bottom: 19px;
@@ -564,4 +576,9 @@ img {
 		width: 12px;
 		height: 12px;
 	}
+
+	.header__span {
+		top: 12px;
+	}
+
 }
