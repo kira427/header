@@ -36,45 +36,60 @@ headerContentSearch.addEventListener('click', () => {
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
     // задаем параметры
     direction: 'vertical',
-    slidesPerView: 4, 
+    slidesPerView: 4,
     spaceBetween: 24,
-    navigation: { 
-        nextEl: '.slider__next', 
-        prevEl: '.slider__prev' 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev'
     },
     freeMode: true,
-    breakpoints: { 
-        0: { 
-            direction: 'horizontal', 
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            direction: 'horizontal',
         },
-        855: { 
+        340: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            direction: 'horizontal',
+        },
+        500: {
+            slidesPerView: 4,
+            direction: 'horizontal',
+        },
+        855: {
             direction: 'vertical',
         }
     }
 });
 
 // Инициализация слайдера изображений
-const sliderImages = new Swiper('.slider__images .swiper-container', { 
+const sliderImages = new Swiper('.slider__images .swiper-container', {
     // задаем параметры
-    direction: 'vertical', 
-    slidesPerView: 1, 
-    spaceBetween: 32, 
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 32,
     mousewheel: true,
     effect: "fade",
     navigation: {
         nextEl: '.slider__next',
-        prevEl: '.slider__prev' 
+        prevEl: '.slider__prev'
     },
-    grabCursor: true, 
-    thumbs: { 
+    grabCursor: true,
+    thumbs: {
         swiper: sliderThumbs
     },
-    breakpoints: { 
-        0: { 
+    breakpoints: {
+        0: {
             direction: 'horizontal',
         },
-        855: { 
-            direction: 'vertical', 
+        855: {
+            direction: 'vertical',
         }
     }
 });
@@ -167,3 +182,13 @@ function closeFullscreen() {
         document.msExitFullscreen();
     }
 }
+
+//-----------LEFT-MENU-----------------------------
+function leftMenu() {
+    const headerSpan = document.querySelector('.header__span');
+    const headerBottom = document.querySelector('.header__bottom');
+    headerSpan.addEventListener('click', function () {
+        headerBottom.classList.toggle('active');
+    })
+}
+leftMenu();
