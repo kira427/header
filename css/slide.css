@@ -332,6 +332,10 @@ ul {
 	.lightbox__controls .next__item {
 		right: 100px;
 	}
+	.lightbox__controls .prev__item ion-icon,
+	.lightbox__controls .next__item ion-icon {
+		font-size: 25px;
+	}
 }
 
 @media (max-width: 370px) {
