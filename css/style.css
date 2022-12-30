@@ -519,7 +519,7 @@ img {
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
 	.header__top-menu {
 		max-width: 100%;
 	}
